@@ -20,34 +20,8 @@ Hello (text-colour:#fff3bf)[$name], Ready to playthrough this Interactive Story?
 
 You decided to arrive at school early to explore. Standing at the main entrance, you are excited for the day and enter HU  
  
-[[Enter Building]]</tw-passagedata><tw-passagedata pid="3" name="Library" tags="lib" position="576,78" size="100,100">(set: $libraryText to $libraryText + 1)
-
-{(if:$libraryText is 1)
-	[
-After opening the door wide to enter the room. You walk and turn the corner and join the main section of the library. An array of energized students doing schoolwork, a couple live on class call, and a few playing card games together enter your sight. Maybe someone playing cards saw Waldo. 
-[[Ask Student a question-&gt;Library]]
-	]}
-	
-{(if:$libraryText is 2)
-	[
-$name:&lt;br/&gt;
-“Hey, did you see anyone enter the library through the reading room in the last minute or so? They dropped their folder in a hurry.” 
-[[Continue-&gt;Library]]
-	]}
-	
-{(if:$libraryText is 3)
-	[
-Gaming Student:&lt;br/&gt;
-“Now that you mentioned it yeah, I saw someone cut through here to IT. Nearly dropped the book they had in their rush too, looked like one I saw on one of the shelves here.”  
-[[Continue-&gt;Library]]
-	]}
-	
-{(if:$libraryText is 4)
-	[
-$name:&lt;br/&gt;
-“Alright thank you! I’ll have to check out something later but I’m going to go look for them.” 
-[[Leave from doors near printer to IT and Counseling Center-&gt;Counseling Center and IT]]
-	]}</tw-passagedata><tw-passagedata pid="4" name="Counseling Center and IT" tags="" position="742,73" size="100,100">You exit the library from the back door that leads to IT &amp; Counseling. You enter the area and Waldo is meeting with an IT member inside a room to fix their computer issue.  
+[[Enter Building]]</tw-passagedata><tw-passagedata pid="3" name="Library" tags="lib" position="576,78" size="100,100">(text-colour:white)+(background:black)[After opening the door wide to enter the room. You walk and turn the corner and join the main section of the library. An array of energized students doing schoolwork, a couple live on class call, and a few playing card games together enter your sight. Maybe someone playing cards saw Waldo. ]
+(text-colour:blue)+(background:black)[[Ask Student a question-&gt;Library 2]]</tw-passagedata><tw-passagedata pid="4" name="Counseling Center and IT" tags="" position="742,73" size="100,100">You exit the library from the back door that leads to IT &amp; Counseling. You enter the area and Waldo is meeting with an IT member inside a room to fix their computer issue.  
 
 You want to be polite and not interrupt so you go off to wait by the side, which happens to be where counselling offices are.  
 
@@ -196,7 +170,16 @@ You thank the IT member and go off to find the Student Union.
 
 (Image of MC talking to IT member) 
 
-[[Search for the Student Union-&gt; Directions to union]]</tw-passagedata></tw-storydata>
+[[Search for the Student Union-&gt; Directions to union]]</tw-passagedata><tw-passagedata pid="45" name="Library 2" tags="lib" position="582,240.60000002384186" size="100,100">(text-colour:white)+(background:black)[
+$name:&lt;br/&gt;
+“Hey, did you see anyone enter the library through the reading room in the last minute or so? They dropped their folder in a hurry.” ]
+(text-colour:blue)+(background:black)[[Continue-&gt;Library 3]]</tw-passagedata><tw-passagedata pid="46" name="Library 3" tags="lib" position="547,384.60000002384186" size="100,100">(text-colour:orange)+(background:black)[
+Gaming Student:&lt;br/&gt;
+“Now that you mentioned it yeah, I saw someone cut through here to IT. Nearly dropped the book they had in their rush too, looked like one I saw on one of the shelves here.” ] 
+(text-colour:blue)+(background:black)[[Continue-&gt;Library 4]]</tw-passagedata><tw-passagedata pid="47" name="Library 4" tags="lib" position="596,516.6000000238419" size="100,100">(text-colour:white)+(background:black)[
+$name:&lt;br/&gt;
+“Alright thank you! I’ll have to check out something later but I’m going to go look for them.” ]
+(text-colour:blue)+(background:black)[[Leave from doors near printer to IT and Counseling Center-&gt;Counseling Center and IT]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.

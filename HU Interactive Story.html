@@ -22,7 +22,19 @@ tw-story[tags~="HUFront"] {
 tw-story[tags~="HUFrIn"] {
   background-image:url("https://cdn.discordapp.com/attachments/813513151072043088/961532886228537345/HUInsidedarken.jpg");
   background-size:cover;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="HUFront" position="92,75" size="100,100">(set: $name to (prompt: &quot;What is your Name?&quot;, &quot;type here&quot;))
+}
+
+tw-story[tags~="ITarea"] {
+  background-image:url("https://cdn.discordapp.com/attachments/813513151072043088/964091409990844426/IMG_6436.png");
+  background-size:cover;
+}
+
+tw-story[tags~="Counselarea"] {
+  background-image:url("https://cdn.discordapp.com/attachments/813513151072043088/964102439043203072/IMG_6448.png");
+  background-size:cover;
+}
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="HUFront" position="92,75" size="100,100">(set: $name to (prompt: &quot;What is your Name?&quot;, &quot;type here&quot;))
 Hello (text-colour:#fff3bf)[$name], Ready to playthrough this Interactive Story?
 
 &lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/961523362016948284/Untitled_Artwork.png&quot; width=&quot;700&quot;;&gt;
@@ -32,12 +44,15 @@ Hello (text-colour:#fff3bf)[$name], Ready to playthrough this Interactive Story?
 &lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/961519233538342922/Untitled_Artwork.png&quot; width=&quot;700&quot;;&gt;
 You decided to arrive at school early to explore. Standing at the main entrance, you are excited for the day and enter HU  
  
-[[Enter Building]]</tw-passagedata><tw-passagedata pid="3" name="Library" tags="lib" position="576,78" size="100,100">(text-colour:white)+(background:black)[After opening the door wide to enter the room. You walk and turn the corner and join the main section of the library. An array of energized students doing schoolwork, a couple live on class call, and a few playing card games together enter your sight. Maybe someone playing cards saw Waldo. ]
-(text-colour:blue)+(background:black)[[Ask Student a question-&gt;Library 2]]</tw-passagedata><tw-passagedata pid="4" name="Counseling Center and IT" tags="" position="742,73" size="100,100">You exit the library from the back door that leads to IT &amp; Counseling. You enter the area and Waldo is meeting with an IT member inside a room to fix their computer issue.  
+[[Enter Building]]</tw-passagedata><tw-passagedata pid="3" name="Library" tags="" position="576,78" size="100,100">(text-colour:white)+(background:black)[After opening the door wide to enter the room. You walk and turn the corner and join the main section of the library. An array of energized students doing schoolwork, a couple live on class call, and a few playing card games together enter your sight. Maybe someone saw Waldo. ]
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964026582463311922/Untitled_Artwork.png&quot; width=&quot;700&quot;;&gt;
+
+(text-colour:blue)+(background:black)[[Ask Student a question-&gt;Library 2]]</tw-passagedata><tw-passagedata pid="4" name="Counseling Center and IT" tags="ITarea" position="742,73" size="100,100">You exit the library from the back door that leads to IT &amp; Counseling. You enter the area and Waldo is meeting with an IT member inside a room to fix their computer issue.  
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964063984472961104/IMG_6434.png&quot; width=&quot;700&quot;;&gt;
 
 You want to be polite and not interrupt so you go off to wait by the side, which happens to be where counselling offices are.  
-
-(Image of where MC is at) 
 
 [[walk to the side to wait]]</tw-passagedata><tw-passagedata pid="5" name="Reading Room Start" tags="" position="398,74" size="100,100">You enter the reading room to look for ‘Waldo’ and hear a piano.
 
@@ -87,95 +102,112 @@ Nayeem hands you a contact card. You look at the card it reads “(text-colour:#
 
 &lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/963345260409417768/Untitled_Artwork.png&quot; width=&quot;700&quot;;&gt;
 
-You notice something dropped, before you could call out, they have already zoomed off to the door on the right side which leads to the reading room. You look at the item, it is a folder with their name on it, &quot;Waldo” you read.
+You notice something dropped, before you could call out, they have already zoomed off to the door on the right side, which leads to the reading room. You look at the item, it is a folder with their name on it, &quot;Waldo” you read.
 
 You best catch up to them while the trail is still hot. To the reading room! 
 
-[[enter reading room-&gt;Reading Room Start]]</tw-passagedata><tw-passagedata pid="22" name="walk to the side to wait" tags="" position="740,185" size="100,100">A woman pops out her office, “oh hello! are you here for a meeting?” You tell her that you are just waiting for someone.  
+[[enter reading room-&gt;Reading Room Start]]</tw-passagedata><tw-passagedata pid="22" name="walk to the side to wait" tags="Counselarea" position="740,185" size="100,100">A woman pops out her office, “oh hello! are you here for a meeting?” You tell her that you are just waiting for someone.  
 
 “I see, my name is Kristie Postorino, I am part of Counseling team, if you ever need to talk, we are here to help and listen.”  
 
-(Insert image of counselor standing by office)  
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964091012748279808/IMG_6446.png&quot; width=&quot;700&quot;;&gt; 
 
 While you are waiting you decide to ask her about... 
 
 [[Ask about Counseling]]
-[[Ask about IT]] </tw-passagedata><tw-passagedata pid="23" name="Ask about Counseling" tags="" position="691,301" size="100,100">(Insert image of counselor pointing to cards) 
+[[Ask about IT]] </tw-passagedata><tw-passagedata pid="23" name="Ask about Counseling" tags="Counselarea" position="691,301" size="100,100">(Insert image of counselor pointing to cards) 
 
-“Of course, I can tell you more about Counseling. You can schedule a meeting at counseling@harrisburgu.edu or walk to RMS to ask us directly. Your meeting can be online, in person right here, or a mixture, whatever is comfortable for you.” “Everything you say is confidential and there is accommodations for those who are struggling”  
+“Of course, I can tell you more about Counseling. You can schedule a meeting at counseling@harrisburgu.edu or walk to the Rooms to ask us directly. Your meeting can be online, in person right here, or a mixture, whatever is comfortable for you.” “Everything you say is confidential and there is accommodations for those who are struggling”  
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964101861600808980/CounselingInfo.png&quot; width=&quot;700&quot;;&gt;
 
 She lets you know she leaves resources and her contact card right by the counter over here if you ever need to get in touch.
 
-[[continue -&gt;ITCO continue section ]]</tw-passagedata><tw-passagedata pid="24" name="ITCO continue section " tags="" position="747,424" size="100,100">“Do you have any more questions?” asked Kristie 
+[[continue -&gt;ITCO continue section ]]</tw-passagedata><tw-passagedata pid="24" name="ITCO continue section " tags="Counselarea" position="747,424" size="100,100">“Do you have any more questions?” asked Kristie 
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964108378756505690/Anyquestions.png&quot; width=&quot;700&quot;;&gt;
 
 [[Ask about Counseling]]
 
 [[Ask about IT]]
 
-[[That is all]]</tw-passagedata><tw-passagedata pid="25" name="Ask about IT" tags="" position="797,298" size="100,100">(Insert image of IT office location on map) 
+[[That is all]]</tw-passagedata><tw-passagedata pid="25" name="Ask about IT" tags="ITarea" position="797,298" size="100,100">(Insert image of IT office location on map) 
 
-Yes, I can tell you a bit about IT. As you already notice, their offices are located on the 2nd floor with counselling. You can bring your computer in if there is an issue. Before heading directly to the IT offices, you can check their page for common issues and more information at https://ithelp.harrisburgu.edu/support/solutions. 
+Yes, I can tell you a bit about IT. As you may notice, their offices are located on the 2nd floor with counseling. You can bring your computer in if there is an issue. Before heading directly to the IT offices, you can check their page for common issues and more information at 
+https://ithelp.harrisburgu.edu/support/solutions. 
 
- If the problem persists you can submit a help ticket and they should get to you soon through email and guide you through.  
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964107102228475984/ITinfo.png&quot; width=&quot;700&quot;;&gt;
 
-[[continue -&gt;ITCO continue section ]]</tw-passagedata><tw-passagedata pid="26" name="That is all" tags="" position="747,535" size="100,100">“Thank you, that is all.” 
+ If a problem persists you can submit a help ticket and they should get to you soon through email and guide you through.  
 
-“No problem you have a good one.” said Kristie as she left. 
+[[continue -&gt;ITCO continue section ]]</tw-passagedata><tw-passagedata pid="26" name="That is all" tags="ITarea" position="747,535" size="100,100">“Thank you, that is all.” 
+
+“No problem, have a good day.” said Kristie as she left. 
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964138335960461382/19BC57D3-A838-44C0-8E8D-C900B8DBEBF4.jpg&quot; width=&quot;700&quot;;&gt;
 
 Now back to Waldo. You hear the IT office door open, and you go over. To your surprise it is only the IT member, you must have missed Waldo’s exit while talking earlier 
 
 [[ask IT member]]</tw-passagedata><tw-passagedata pid="27" name=" Directions to union" tags="" position="954,73" size="100,100">You Exit the IT Department using the glass door and then use the elevator right of the door 
 
-(Image of glass door + Elevator near IT) 
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964114770141782016/Elevator.png&quot; width=&quot;700&quot;;&gt;
 
-[[Head down to Lobby on 1st floor]]</tw-passagedata><tw-passagedata pid="28" name="Head down to Lobby on 1st floor" tags="" position="956,182" size="100,100">At the to Lobby you ask Staff at the desk if they know where the Student Union is they tell you 
-“Oh yes, you can find it inside the Whitaker Center on 3rd St. If you use the HU exit to strawberry square, turn to your right, go past career services. Okay?” 
+[[Head down to Lobby on 1st floor]]</tw-passagedata><tw-passagedata pid="28" name="Head down to Lobby on 1st floor" tags="" position="956,182" size="100,100">At the Lobby, you ask Staff if they know where the Student Union is
 
-(Directional image 1+ Image of lobby desk person talking/ pointing to exit direction) 
+The staff member replies “Oh yes, you can find it inside the Whitaker Center on 3rd St. If you use the HU exit to strawberry square, turn to your right, go past career services. Okay?” 
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964122011469238332/UnionDirect.png&quot; width=&quot;700&quot;;&gt;
 
 [[&quot;okay&quot;-&gt;lobbyreply1]]</tw-passagedata><tw-passagedata pid="29" name="lobbyreply1" tags="" position="956,289" size="100,100">“You should reach Member’s 1st on the corner. Go turn Left, Okay?” 
 
-(Directional image 2 + Image of lobby desk person talking/ pointing to exit direction) 
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964122640933593108/UnionDirect.png&quot; width=&quot;700&quot;;&gt;
 
-[[&quot;yes&quot;-&gt;Lobbyreply2]]</tw-passagedata><tw-passagedata pid="30" name="Lobbyreply2" tags="" position="957,394" size="100,100"> Finally keep going ahead past Rite Aid, and to the exit. Right across should be the Whitaker. When you enter, go up the stairs and to the left is the Student Union, Got it?” (Directional image 3+ Image of lobby desk person talking/ pointing to exit direction)  
+[[&quot;yes&quot;-&gt;Lobbyreply2]]</tw-passagedata><tw-passagedata pid="30" name="Lobbyreply2" tags="" position="957,394" size="100,100"> Finally keep going ahead past Rite Aid, and to the exit. Right across should be the Whitaker. When you enter, go up the stairs and to the left is the Student Union, Got it?” 
+ 
+ &lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964123649730809896/UnionDirect.png&quot; width=&quot;700&quot;;&gt;
 
 “Got it, thank you”  
 
 [[Use HU exit into Strawberry Square]]</tw-passagedata><tw-passagedata pid="31" name="Use HU exit into Strawberry Square" tags="" position="957,499" size="100,100">You are now in Strawberry Square. Now it is time to test your memory. 
 
-(Image of map + location marker) 
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964124737779417088/UnionDirect.png&quot; width=&quot;700&quot;;&gt;
 
 [[turn right pass Career Services]]
 
 [[turn left towards exit]] 
  </tw-passagedata><tw-passagedata pid="32" name="turn right pass Career Services" tags="" position="895,603" size="100,100">You arrive at the corner where Member’s 1st is at, where to next? 
 
-(Image of map + location marker) 
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964132514459447336/UnionDirect.png&quot; width=&quot;700&quot;;&gt;
 
 [[turn right to stairway]] 
-[[turn left towards path]]  </tw-passagedata><tw-passagedata pid="33" name="turn left towards exit" tags="" position="1000,603" size="100,100">This is different from given direction, for now let&#39;s go back
-(image of wrong direction)
-[[back-&gt;Use HU exit into Strawberry Square]]</tw-passagedata><tw-passagedata pid="34" name="turn right to stairway" tags="" position="896,708" size="100,100">This is different from given direction, for now let&#39;s go back
-(image of wrong direction)
+[[turn left towards path]]  </tw-passagedata><tw-passagedata pid="33" name="turn left towards exit" tags="" position="1000,603" size="100,100">This is different from the given direction, for now let&#39;s go back
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964128275913904260/Wrongdir1.png&quot; width=&quot;700&quot;;&gt;
+
+[[back-&gt;Use HU exit into Strawberry Square]]</tw-passagedata><tw-passagedata pid="34" name="turn right to stairway" tags="" position="896,708" size="100,100">This is different from the given direction, let&#39;s go back
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964129021455634462/Wrongdir2.png&quot; width=&quot;700&quot;;&gt;
+
 [[back-&gt;turn right pass Career Services]]</tw-passagedata><tw-passagedata pid="35" name="turn left towards path" tags="" position="1000,707" size="100,100">You walk straight on the pathway and continue pass Rite Aid. You see the Strawberry Square exit like the staff member said. 
 
-(Image of map + location marker) 
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964135485117169664/UnionDirect.png&quot; width=&quot;700&quot;;&gt; 
 
 [[Exit Strawberry Square]]</tw-passagedata><tw-passagedata pid="36" name="Exit Strawberry Square" tags="" position="947,814" size="100,100">You see the Whitaker Center, where the Student Union is at, right across the street. 
 
-(Image of map + location marker) 
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964136240125444096/IMG_6457.jpg&quot; width=&quot;700&quot;;&gt;
 
-[[walk across the street towards the building]]</tw-passagedata><tw-passagedata pid="37" name="walk across the street towards the building" tags="" position="945,918" size="100,100">You walked across the street and entered the Whitaker building. You see a stairway up and one down where to? 
-
-(Image of stairways at Whitaker) 
+[[walk across the street towards the building]]</tw-passagedata><tw-passagedata pid="37" name="walk across the street towards the building" tags="" position="945,918" size="100,100">You walked across the street and entered the Whitaker building. You see a stairway up and one down, where do you go? 
 
 [[stairway up]]
 [[stairway down]]</tw-passagedata><tw-passagedata pid="38" name="stairway up" tags="" position="993,1027" size="100,100">You use the stairway up, and you see the Student Union on the left 
 Yes you&#39;ve made it to the right place
 
-(Image of map + location marker) 
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964137030642704384/IMG_6462.jpg&quot; width=&quot;700&quot;;&gt;
 
-[[enter the Student Union-&gt;Student Union]]</tw-passagedata><tw-passagedata pid="39" name="stairway down" tags="" position="886,1025" size="100,100">Woops this is HU&#39;s STORM team area, wrong place.
+[[enter the Student Union-&gt;Student Union]]</tw-passagedata><tw-passagedata pid="39" name="stairway down" tags="" position="886,1025" size="100,100">Woops this is HU&#39;s STORM area, they are the school&#39;s esports team, wrong place.
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964137030785318912/IMG_6461.png&quot; width=&quot;700&quot;;&gt;
+
 [[go to stairway up instead-&gt;stairway up]]</tw-passagedata><tw-passagedata pid="40" name="Student Union" tags="" position="1127,70" size="100,100">write script here and link to next location at the end
 [[Career Services]]</tw-passagedata><tw-passagedata pid="41" name="Career Services" tags="" position="1283,68" size="100,100">write script here and link to next location at the end
 [[Strawberry Square]]</tw-passagedata><tw-passagedata pid="42" name="Strawberry Square" tags="" position="1435,69" size="100,100">write script here and link to next location at the end
@@ -195,23 +227,29 @@ Career Service:Jordan
 
 Strawberry Square:Byran
 
-Union (Ending):Ryan</tw-passagedata><tw-passagedata pid="44" name="ask IT member" tags="" position="748,647" size="100,100">“excuse me sir, do you know where Waldo is?” 
+Union (Ending):Ryan</tw-passagedata><tw-passagedata pid="44" name="ask IT member" tags="ITarea" position="748,647" size="100,100">“excuse me sir, do you know where Waldo is?” 
 
-“Oh! They just left a while ago; he went to the Student Union to meet some friends.” replied the IT member. 
+“Oh! They just left a while ago, he went to the Student Union to meet some friends.” replied the IT member. 
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964113434746712135/TalkToIT.png&quot; width=&quot;700&quot;;&gt;
 
 You thank the IT member and go off to find the Student Union.  
 
-(Image of MC talking to IT member) 
-
-[[Search for the Student Union-&gt; Directions to union]]</tw-passagedata><tw-passagedata pid="45" name="Library 2" tags="lib" position="582,240" size="100,100">(text-colour:white)+(background:black)[
+[[Search for the Student Union-&gt; Directions to union]]</tw-passagedata><tw-passagedata pid="45" name="Library 2" tags="" position="558,231" size="100,100">(text-colour:white)+(background:black)[
 $name:&lt;br/&gt;
 “Hey, did you see anyone enter the library through the reading room in the last minute or so? They dropped their folder in a hurry.” ]
-(text-colour:blue)+(background:black)[[Continue-&gt;Library 3]]</tw-passagedata><tw-passagedata pid="46" name="Library 3" tags="lib" position="547,384" size="100,100">(text-colour:orange)+(background:black)[
+(text-colour:blue)+(background:black)[[Continue-&gt;Library 3]]</tw-passagedata><tw-passagedata pid="46" name="Library 3" tags="" position="547,384" size="100,100">(text-colour:orange)+(background:black)[
 Gaming Student:&lt;br/&gt;
 “Now that you mentioned it yeah, I saw someone cut through here to IT. Nearly dropped the book they had in their rush too, looked like one I saw on one of the shelves here.” ] 
-(text-colour:blue)+(background:black)[[Continue-&gt;Library 4]]</tw-passagedata><tw-passagedata pid="47" name="Library 4" tags="lib" position="596,516" size="100,100">(text-colour:white)+(background:black)[
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964025381814423573/Untitled_Artwork.png&quot; width=&quot;700&quot;;&gt;
+
+(text-colour:blue)+(background:black)[[Continue-&gt;Library 4]]</tw-passagedata><tw-passagedata pid="47" name="Library 4" tags="" position="596,516" size="100,100">(text-colour:white)+(background:black)[
 $name:&lt;br/&gt;
 “Alright thank you! I’ll have to check out something later but I’m going to go look for them.” ]
+
+&lt;img src=&quot;https://cdn.discordapp.com/attachments/813513151072043088/964033228598030346/IMG_6433.png&quot; width=&quot;700&quot;;&gt;
+
 (text-colour:blue)+(background:black)[[Leave from doors near printer to IT and Counseling Center-&gt;Counseling Center and IT]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
